@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Martinez | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Arturo Martinez</h1>
+        <p>Welcome to my professional portfolio. Explore my work, skills, and get in touch!</p>
+        <div style="margin-top:1em; font-size:1.1em;">
+            <strong>Current Date & Time:</strong> <span id="current-datetime"></span>
+            <span style="margin-left:1.5em;"><strong>IP:</strong> <span id="current-ip"></span></span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="location-info" style="margin-bottom:1em; font-size:1.05em; color:#6366f1;"></div>
+        <div class="portfolio-examples">
+            <h2>Top Portfolio Skills</h2>
+            <ul>
+                <li><a href="https://github.com/EdgarArturoMartinez/YuxiServerlessComputing/" target="_blank">Serverless Computing</a> – Azure Serverless Computing Code.</li>
+                <li><a href="https://github.com/EdgarArturoMartinez/EF7vsWorld/" target="_blank">EF Core vs World</a> – Entity Framework Core Tests.</li>                
+                <li><a href="https://github.com/EdgarArturoMartinez/ConsoleExercises/" target="_blank">Console Exercises</a> – Tests and Code Examples.</li>
+                <li><a href="https://github.com/EdgarArturoMartinez/MLTest/" target="_blank">Image Detector</a> – Teachable Machines Model JavaScript.</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="feedback-section" id="contact">
+        <h2>Contact & Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="rating">
+                <span style="font-weight:bold; display:block; margin-bottom:0.5em;">How would you rate my portfolio?</span>
+                <label><input type="radio" name="rating" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="rating" value="Good"> Good</label>
+                <label><input type="radio" name="rating" value="Average"> Average</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <main id="about">
+        <div class="portfolio-grid">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <img src="https://avatars.githubusercontent.com/u/1050216?v=4" alt="Arthur Martinez Profile" style="width:140px; height:140px; border-radius:50%; box-shadow:0 2px 8px rgba(99,102,241,0.15); margin-bottom:1em;" />
+                <p>Hello! I'm Arthur Martinez, a passionate developer and designer with expertise in JavaScript, TypeScript, React, Node.js, UI/UX Design, and more. I specialize in building modern, user-friendly web applications and digital experiences. My portfolio showcases a selection of my best work, skills, and achievements.</p>
+                <p>Connect with me on <a href="https://www.linkedin.com/in/edgar-arturo-mart%C3%ADnez-gambasica-ab8ab4a9/?locale=en_US" target="_blank" style="color:#6366f1; font-weight:bold; text-decoration:underline;">LinkedIn</a> to see my professional background and network.<br>
+                View my code and projects on <a href="https://github.com/EdgarArturoMartinez" target="_blank" style="color:#6366f1; font-weight:bold; text-decoration:underline;">GitHub</a>.</p>
+                <div style="margin:2em 0;">
+                    <h3>Featured Video</h3>
+                    <video width="100%" controls poster="https://img.youtube.com/vi/UYI_BL8sHwM/0.jpg">
+                        <source src="https://www.youtube.com/watch?v=UYI_BL8sHwM&t=64s" type="video/mp4">
+                        Your browser does not support the video tag. <a href="https://www.youtube.com/watch?v=UYI_BL8sHwM&t=64s" target="_blank">Watch on YouTube</a>.
+                    </video>
+                </div>
+                <div style="margin:2em 0;">
+                    <h3>Audio Example</h3>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2>Featured Projects</h2>
+                <article>
+                    <h3>Project One: Modern Web App</h3>
+                    <p>A responsive, scalable web application built with React and Node.js. Features include real-time data, authentication, and a beautiful UI.</p>
+                </article>
+                <article>
+                    <h3>Project Two: Creative Portfolio</h3>
+                    <p>A personal portfolio site inspired by the best in the industry, with interactive animations and a clean layout.</p>
+                </article>
+                <article>
+                    <h3>Project Three: E-commerce Platform</h3>
+                    <p>Full-featured e-commerce solution with secure payments, product management, and analytics dashboard.</p>
+                </article>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C#</li>
+                    <li>Blazor, Responsive Design</li>
+                    <li>SQL, Azure</li>
+                    <li>REST APIs, GraphQL</li>
+                    <li>Git, CI/CD, Agile Methodologies</li>
+                </ul>
+            </section>
+            <aside class="why-choose-me">
+                <h2>Why Choose Me?</h2>
+                <p>I deliver high-quality, maintainable code and creative solutions. My work is inspired by top designers and developers worldwide. Let's build something amazing together!</p>
+            </aside>
+            <section class="exchange-rate">
+                <h2>USD/COP Exchange Rate</h2>
+                <div id="exchange-info" style="font-size:1.2em; color:#6366f1; margin-top:1em;"></div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2025 Arturo Martinez. All rights reserved. | Connect: <a href="mailto:Edgar.Arturo.Martinez@Gmail.com" style="color:#fff;text-decoration:underline;">arthur@email.com</a></p>
+    </footer>
+</body>
+</html>
